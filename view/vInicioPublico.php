@@ -1,11 +1,14 @@
 <?php
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHP.php to edit this template
+ * @package: LoginLogoff
+ * @author: Alejandro Otálvaro Marulanda
  */
 ?>
+<fieldset>
+    <form>
+        <input type="submit" name="iniciarsesion" value="Iniciar Sesion" >
+        <input type="submit" name="crear" value="Crear Usuario">
+        <input type="submit" name="salir" value="Salir" >
 
-<div>
-    <h1>ALEJANDRO OTÁLVARO MARULANDA</h1>
-    <h2>Aplicación Login Logoff</h2>
-</div>
+    </form>
+</fieldset>
