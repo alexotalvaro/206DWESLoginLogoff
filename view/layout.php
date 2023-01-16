@@ -14,22 +14,27 @@
         <title>LOGIN / LOGOFF</title>
         <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Rajdhani:wght@300&display=swap" rel="stylesheet">
-        <!--<link href="../webroot/css/estilos-layout.css" rel="stylesheet" type="text/css">-->
-        <link href="../webroot/css/estilos-inicioPublico.css" rel="stylesheet" type="text/css">
+        <link href="./webroot/css/estilos-inicioPublico.css" rel="stylesheet" type="text/css">
     </head>
 
     <body>
-        <div>
+        <div class="container">
 
             <h1>ALEJANDRO OTÁLVARO MARULANDA</h1>
             <br>
             <h3>LOGIN LOGOFF</h3>
 
-            <div>
+            <div class="paginaEnCurso">
                 <section>
                     <?php require_once $aVistas[$_SESSION['paginaEnCurso']]; //muestra dentro del body, la vista que carga de las vistas ?>
                 </section>
             </div>
+            <label>Idioma: </label>
+            <select name="idioma" id="IDIOMA">
+                <option>ES</option>
+                <option>EN</option>
+                <option>PT</option>
+            </select>
 
             <footer>
                 <a href="/../index.php" style="text-decoration:none">

@@ -5,7 +5,7 @@
  */
 
 require_once 'config/confApp.php';
-require_once 'config/confDBPDO.php';
+
 
 
 session_start();

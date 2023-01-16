@@ -13,13 +13,7 @@
     <br>
     <input type="submit" name="inicioSesion" value="Iniciar Sesion" >
     <br>
-    <label>Idioma: </label>
-    <select name="idioma" id="IDIOMA">
-        <option>ES</option>
-        <option>EN</option>
-        <option>PT</option>
-    </select>
-    <br>
-    
+    <input type="submit" name="salir" value="Salir">
+    <input type="submit" name="registro" value="Crear Usuario">
 
 </form>

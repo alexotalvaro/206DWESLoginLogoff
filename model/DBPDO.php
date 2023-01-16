@@ -1,7 +1,21 @@
 <?php
-
-/* 
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHP.php to edit this template
+/*
+ * @package: LoginLogoff
+ * @author: Alejandro Otálvaro Marulanda
  */
+require_once 'config/confApp.php';
+class DBPDO {
 
+    public static function ejecutaConsulta($sentenciaSQL) {
+        try {
+            $miDB = new PDO(DSN, USUARIO, CONTRA); //Conexion a la BD muestra los datos y guarda el objeto
+            $consultaUsuarioExe = $miDB->prepare($sentenciaSQL);
+            $consultaUsuarioExe->execute();
+            $oConsulta = $consultaUsuarioExe->fetchObject();
+        } catch (PDOException $excepcion) {
+            echo $excepcion->getMessage();
+        } finally {
+            unset($miDB);
+        }
+    }
+}

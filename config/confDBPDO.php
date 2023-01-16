@@ -6,8 +6,8 @@
  */
 
 
-define("DSN", 'mysql:dbname=DB206DWESProyectoLoginLogoffTema5;host=192.168.20.19');
-define("USUARIO", 'user206DWESLoginLogoffTema5');
+define("DSN", 'mysql:dbname=DB206DWESProyectoLoginLogoffTema5;host=192.168.1.214');
+define("USUARIO", 'user206DWESLoginLogoff');
 define("CONTRA", 'paso');
 
 

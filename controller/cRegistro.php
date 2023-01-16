@@ -1,7 +1,11 @@
 <?php
-
-/* 
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHP.php to edit this template
+/*
+ * @package: LoginLogoff
+ * @author: Alejandro Otálvaro Marulanda
  */
-
+if (isset($_REQUEST["salir"])) {
+    $_SESSION['paginaEnCurso'] = 'iniciopublico';
+    header('Location: index.php');
+    exit;
+}
+require_once $aVistas['layout']; //carga la pagina de inicio publico

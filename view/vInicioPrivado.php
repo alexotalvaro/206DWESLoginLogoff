@@ -4,21 +4,8 @@
  * @author: Alejandro Otálvaro Marulanda
  */
 ?>
+<h3>Inicio Privado</h3>
 <form>
-    <label> Usuario:</label>
-    <input type = "text" name = "usuario">
-    <br>
-    <label> Contraseña: </label>
-    <input type="password" name="contra">
-    <br>
-    <label> Descripción del Usuario</label>
-    <input type="text" name="descripcion">
-    <br>
-    <input type="submit" name="crear" value="Crear" >
-    <label>Idioma: </label>
-    <select name="idioma" id="IDIOMA">
-        <option>ES</option>
-        <option>EN</option>
-        <option>PT</option>
-    </select>
+    <input type="submit" name="detalle" value="Detalle">
+    <input type="submit" name="salir" value="Salir">
 </form>

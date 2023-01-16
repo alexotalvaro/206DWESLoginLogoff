@@ -1,8 +1,19 @@
 <?php
-
-/* 
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHP.php to edit this template
+/*
+ * @package: LoginLogoff
+ * @author: Alejandro Otálvaro Marulanda
  */
-
-echo 'hola';
+?>
+<form>
+    <label> Usuario:</label>
+    <input type = "text" name = "usuario">
+    <br>
+    <label> Contraseña: </label>
+    <input type="password" name="contra">
+    <br>
+    <label> Descripción del Usuario</label>
+    <input type="text" name="descripcion">
+    <input type="submit" name="crear" value="Crear">
+    <br>
+    <input type="submit" name="salir" value="Salir">
+</form>
