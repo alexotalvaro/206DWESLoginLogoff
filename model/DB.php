@@ -7,5 +7,5 @@
 require_once 'config/confApp.php';
 
 interface DB {
-    public function ejecutarConsulta($sentenciaSQL, $parametros);
+    public static function ejecutarConsulta($sentenciaSQL, $parametros);
 }

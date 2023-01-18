@@ -5,6 +5,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHP.php to edit this template
  */
 
-define("DSN", 'mysql:dbname=DAW206DBDepartamentos;host=192.168.1.214');
-define("USUARIO", 'usuarioDAW206DBDepartamentos');
+define("DSN", 'mysql:dbname=DB206DWESLoginLogoff;host=192.168.1.214');
+define("USUARIO", 'user206DWESLoginLogoff');
 define("CONTRA", 'paso');
+

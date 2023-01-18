@@ -4,7 +4,7 @@
  * @author: Alejandro Otálvaro Marulanda
  */
 ?>
-<form>
+<form method="post">
     <label> Usuario:</label>
     <input type = "text" name = "usuario" placeholder="Usuario">
     <br>

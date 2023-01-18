@@ -19,22 +19,16 @@
 
     <body>
         <div class="container">
-
-            <h1>ALEJANDRO OTÁLVARO MARULANDA</h1>
-            <br>
-            <h3>LOGIN LOGOFF</h3>
-
+            <header>
+                <h1>ALEJANDRO OTÁLVARO MARULANDA</h1>
+                <br>
+                <h3>LOGIN LOGOFF</h3>
+            </header>
             <div class="paginaEnCurso">
                 <section>
                     <?php require_once $aVistas[$_SESSION['paginaEnCurso']]; //muestra dentro del body, la vista que carga de las vistas ?>
                 </section>
             </div>
-            <label>Idioma: </label>
-            <select name="idioma" id="IDIOMA">
-                <option>ES</option>
-                <option>EN</option>
-                <option>PT</option>
-            </select>
 
             <footer>
                 <a href="/../index.php" style="text-decoration:none">

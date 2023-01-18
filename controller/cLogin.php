@@ -20,9 +20,11 @@ if (isset($_REQUEST["inicioSesion"])) { //Si pulsamos en botón de iniciar sesio
     }
     $aRespuesta['usuario'] = $_REQUEST['usuario'];
     $aRespuesta['contra'] = $_REQUEST['contra'];
-    if ($entradaOk) {
-        $oUsuario = DBPDO::ejecutaConsulta(UsuarioPDO::validarUsuario($aRespuesta['usuario'], $aRespuesta['contra']));
-        echo 'bien hecho';
+    $oUsuario = UsuarioPDO::validarUsuario($aRespuesta['usuario'], $aRespuesta['contra']);
+    if ($oUsuario) {
+        echo 'hola';
+        var_dump($oUsuario);
+        $_SESSION['usuarioCreado'] = $oUsuario;
         $_SESSION['paginaEnCurso'] = 'inicioprivado'; //La página en curso ahora será la del INICIO PRIVADO ...
         header('Location: index.php'); //y me voy al index, en el cual, se cargara paginaencurso(INICIO PRIVADO)y ahí decide que hacer..
         exit;
