@@ -54,4 +54,13 @@ class Usuario {
         return $this->perfil;
     }
 
+    public function toString(){
+        return $this->codUsuario;
+        return $this->password;
+        return $this->descUsuario;
+        return $this->numConexiones;
+        return $this->fechaHoraUltimaConexion;
+        return $this->fechaHoraUltimaConexionAnterior;
+        return $this->perfil;
+    }
 }

@@ -5,15 +5,15 @@
  */
 ?>
 <form>
-    <label> Usuario:</label>
-    <input type = "text" name = "usuario">
+    <label class="tituloC"> Usuario:</label>
+    <input class="cajaL" type = "text" name = "usuario">
     <br>
-    <label> Contraseña: </label>
-    <input type="password" name="contra">
+    <label class="tituloC"> Contraseña: </label>
+    <input class="cajaL" type="password" name="contra">
     <br>
-    <label> Descripción del Usuario</label>
-    <input type="text" name="descripcion">
-    <input type="submit" name="crear" value="Crear">
+    <label class="tituloC"> Descripción del Usuario</label>
+    <input class="cajaL" type="text" name="descripcion">
     <br>
-    <input type="submit" name="salir" value="Salir">
+    <input class="botonLogin" type="submit" name="crear" value="Aceptar">
+    <input class="botonLogin" type="submit" name="salir" value="Cancelar">
 </form>

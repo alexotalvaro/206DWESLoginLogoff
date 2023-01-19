@@ -5,15 +5,14 @@
  */
 ?>
 <form method="post">
-    <label> Usuario:</label>
-    <input type = "text" name = "usuario" placeholder="Usuario">
+    <label class="tituloC"> Usuario: </label>
+    <input class="cajaL" type = "text" name = "usuario" placeholder="Usuario">
     <br>
-    <label> Contraseña: </label>
-    <input type="password" name="contra" placeholder="Password">
+    <label class="tituloC"> Contraseña: </label>
+    <input class="cajaL" type="password" name="contra" placeholder="Password">
     <br>
-    <input type="submit" name="inicioSesion" value="Iniciar Sesion" >
-    <br>
-    <input type="submit" name="salir" value="Salir">
-    <input type="submit" name="registro" value="Crear Usuario">
+    <input class="botonLogin" id="inicio" type="submit" name="inicioSesion" value="Aceptar" >
+    <input class="botonLogin" id="salir" type="submit" name="salir" value="Cancelar">
+<!--    <input class="botonLogin" id="registro" type="submit" name="registro" value="Crear Usuario">-->
 
 </form>

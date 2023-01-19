@@ -4,9 +4,7 @@
  * @author: Alejandro Otálvaro Marulanda
  */
 ?>
-<fieldset>
     <form>
-        <input type="submit" name="iniciarsesion" value="Iniciar Sesion" >
-        <input type="submit" name="salir" value="Salir" >
+        <input class="botonLogin" type="submit" name="iniciarsesion" value="Iniciar Sesion" >
+        <input class="botonLogin" type="submit" name="registro" value="Registrarse">
     </form>
-</fieldset>
