@@ -55,12 +55,7 @@ class Usuario {
     }
 
     public function toString(){
-        return $this->codUsuario;
-        return $this->password;
-        return $this->descUsuario;
-        return $this->numConexiones;
-        return $this->fechaHoraUltimaConexion;
-        return $this->fechaHoraUltimaConexionAnterior;
-        return $this->perfil;
+        return "Codigo: ".$this->codUsuario."<br>"."Descripcion: ".$this->descUsuario."<br>"."Numero de conexiones: ".$this->numConexiones."<br>"."Perfil: ".$this->perfil;
+        
     }
 }

@@ -14,7 +14,7 @@
                     } else {
                         echo 'Te has conectado: ' . $_SESSION['usuarioDWES206LoginLogoff']->getNumConexiones() . ' veces';
                         echo '<br>';
-                        echo'Tu ultima conexión ha sido: ' . $_SESSION['usuarioDWES206LoginLogoff']->getFechaHoraUltimaConexion();
+                        //echo'Tu ultima conexión ha sido: ' . $_SESSION['usuarioDWES206LoginLogoff']->getFechaHoraUltimaConexion();
                     }
         
     ?>

@@ -5,20 +5,16 @@
  */
 ?>
 <h3>Detalle </h3>
+<table>
+    <?php
+    print '<tr><td>';
+    print $_SESSION['usuarioDWES206LoginLogoff']->toString();
+    print '</tr></td>';
+    ?>
+</table>
 <?php
-//var_dump($_SESSION['usuarioDWES206LoginLogoff']);
-//$_SESSION['usuarioDWES206LoginLogoff']->getCodUsuario();
-//print_r($_SESSION);
-//var_dump($_SESSION['usuarioDWES206LoginLogoff']->toString());
-foreach ($_SESSION as $clave => $valor) {
-    if (is_object($valor)) {
-        echo $_SESSION['usuarioDWES206LoginLogoff']->toString();
-        foreach ($valor as $c => $v) {
-            echo 'culo';
-            echo $_SESSION['usuarioDWES206LoginLogoff']->toString();
-        }
-    }
-}
+print '<br>';
+print phpinfo();
 ?>
 <form>
     <input class="botonLogin" type="submit" name="salir" value="Salir">

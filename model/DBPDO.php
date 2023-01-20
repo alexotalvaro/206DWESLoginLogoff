@@ -19,10 +19,17 @@ class DBPDO implements DB {
             return $oResultado;
             
         } catch (PDOException $excepcion) {
-            echo $excepcion->getMessage();
+            
+            //pendiente guardar error en la session;
+            
+            $error=new Error;
+            
+            
         } finally {
             unset($miDB);
         }
     }
 
 }
+
+
