@@ -4,6 +4,9 @@
  * @author: Alejandro Otálvaro Marulanda
  */
 ?>
+<form>
+    <input class="botonLogin" type="submit" name="volver" value="Volver">
+</form>
 <h3>Detalle </h3>
 <table>
     <?php
@@ -16,6 +19,3 @@
 print '<br>';
 print phpinfo();
 ?>
-<form>
-    <input class="botonLogin" type="submit" name="salir" value="Salir">
-</form>

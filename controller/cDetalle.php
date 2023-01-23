@@ -3,8 +3,9 @@
  * @package: LoginLogoff
  * @author: Alejandro Otálvaro Marulanda
  */
-if (isset($_REQUEST["salir"])) {
-    $_SESSION['paginaEnCurso'] = 'iniciopublico';
+if (isset($_REQUEST["volver"])) {
+    session_start();
+    $_SESSION['paginaEnCurso'] = $_SESSION['paginaAnterior'];
     header('Location: index.php');
     exit;
 }
